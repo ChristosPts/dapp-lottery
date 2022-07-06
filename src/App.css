@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+img {	 
+	border: 2px #000000 solid;
+  max-width:350px;
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Bclass{
+  padding-top: 15px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bidButtons{
+  border-radius: 10px;
+  border-color: rgb(126, 195, 255);
+  background-color: rgb(126, 195, 255);
+  color: #ffffff;
+  padding: 10px;
+  width: 85%;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bidButtons:hover {
+  background-color: #ffae00; 
+  border-color: #ffa600; 
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ 
+.Pclass{
+  font-size: 16px;
+  float: left;
+  position: relative;
+  top: -15px;
+  bottom: -25px;
+  margin-bottom: -30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PrimaryButton{
+  border-radius: 10px;
+  border-color: rgb(71, 71, 71);
+  background-color: rgb(68, 68, 68);
+  color: #ffffff;
+  padding: 8px;
+  margin-right: 10px;
 }
+.PrimaryButton:hover {
+  background-color: #02a2ff; 
+  border-color: #0077ff; 
+  color: white;
+}
+.errors{
+  float: right;
+  color: red;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+ 
+.left{
+  float: left;
+  font-size: 14px;
+  padding-bottom: -5px;
+}
+
+.right{
+  float: right;
+}
+
+.ownerBttn{
+  border-radius: 10px;
+  border-color: rgb(71, 71, 71);
+  background-color: rgb(68, 68, 68);
+  color: #ffffff;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+.ownerBttn:hover {
+  border-color: rgb(0, 175, 9);
+  background-color: rgb(0, 124, 6);
+  color: #ffffff;
+}
+
+.userBttn{
+  border-radius: 10px;
+  border-color: rgb(71, 71, 71);
+  background-color: rgb(68, 68, 68);
+  color: #ffffff;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  float: right;
+}
+.userBttn:hover {
+  border-color: rgb(126, 195, 255);
+  background-color: rgb(126, 195, 255);
+  color: #ffffff;
+}
+
+.winnerBttn{
+  border-radius: 10px;
+  border-color: rgb(71, 71, 71);
+  background-color: rgb(68, 68, 68);
+  color: #ffffff;
+  padding: 8px;
+  margin-right: 10px;
+}
+.winnerBttn:hover {
+  border-color: rgb(0, 175, 9);
+  background-color: rgb(0, 124, 6);
+  color: #ffffff;
+}
+ 
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+   background-image: url("back.png");
+	background-repeat: repeat-x repeat-y;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
+  grid-template-rows: 0.5fr 0.6fr 1.6fr 1.2fr;
+  grid-template-areas:
+    "title title title title"
+    " main main main sidebar"
+    " content1 content2 content3 sidebar"
+    " content4 content4 content5 content6";
+  grid-gap: 0.4rem;
+}
+.title{
+  grid-area:title;
+  text-align: center;
+  font-size: 24px;
+  margin-top: -5px;
+  margin-bottom: -15px;
+}
+.main {
+   grid-area: main;
+  padding-left: 10px;
+   padding-top: 20px;
+}
+.sidebar{
+  padding-top: 15px;
+  grid-area: sidebar;
+  text-align: center;
+  border-left: 2px solid rgb(75, 75, 75);
+}
+.content1 {
+  grid-area: content1;
+   text-align: center;
+}
+.content2 {
+  grid-area: content2;
+   text-align: center;
+}
+.content3 {
+  grid-area: content3;
+   text-align: center;
+}
+.content4{
+  grid-area: content4;
+  padding-left: 30px;
+}
+.content5{
+  grid-area: content5;
+  float: right;
+  padding-right: 20px;
+}
+.content6{
+  grid-area: content6;
+  padding-right: 10px;
+  border-left: 2px solid rgb(75, 75, 75);
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.Destroy{
+  border-radius: 10px;
+  border-color: rgb(71, 71, 71);
+  background-color: rgb(68, 68, 68);
+  color: #ffffff;
+  padding: 8px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.Destroy:hover {
+  border-color: rgb(163, 0, 0);
+  background-color: rgb(196, 0, 0);
+  color: #ffffff;
+  }
+
+.successMessage{ 
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(212, 170, 58);
+  padding-top: 15px;
+  text-align: center;  
+}
+ 
+.input{
+  width: 90%;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+ 
+ 
