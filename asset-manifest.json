@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/dapp-lottery/static/css/main.2fcc5e3c.css",
+    "main.js": "/dapp-lottery/static/js/main.e34e2e6f.js",
+    "static/js/787.1e8472be.chunk.js": "/dapp-lottery/static/js/787.1e8472be.chunk.js",
+    "static/media/laptop.png": "/dapp-lottery/static/media/laptop.de6ed61ce476bc23d66e.png",
+    "static/media/phone.png": "/dapp-lottery/static/media/phone.06b4a075f8f368372638.png",
+    "static/media/car.png": "/dapp-lottery/static/media/car.8005969e6d4cbd65d88b.png",
+    "static/media/back.png": "/dapp-lottery/static/media/back.3d8f69c443c9581955c0.png",
+    "index.html": "/dapp-lottery/index.html",
+    "main.2fcc5e3c.css.map": "/dapp-lottery/static/css/main.2fcc5e3c.css.map",
+    "main.e34e2e6f.js.map": "/dapp-lottery/static/js/main.e34e2e6f.js.map",
+    "787.1e8472be.chunk.js.map": "/dapp-lottery/static/js/787.1e8472be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fcc5e3c.css",
+    "static/js/main.e34e2e6f.js"
+  ]
+}
